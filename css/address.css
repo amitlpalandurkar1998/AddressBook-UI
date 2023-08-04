@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Roboto;
 }
 body {
     margin: 0px;
@@ -15,7 +16,10 @@ body {
     justify-content: center;
     align-items: center;
     border: 0px;
-    margin-left: 0;
+    font-weight: 600;
+}
+.header-logo span {
+    margin: 1em;
 }
 .logo-content {
     padding: 0% 10% 0 10%;
@@ -44,19 +48,20 @@ body {
     min-height: calc(100%-80px);
     background-color: #f7f7f7;
     display: flex;
-    justify-content: center;
+    margin: auto;
     align-items: center;
     border: 0px;
 }
 .form {
     width: 65%;
-    margin: 2%;
-    padding: 44px 60px;
+    margin: 0px;
+    padding: 0px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #f5f5f5;
-    border-radius: 8px;
+    border-radius: 10px;
     opacity: 1;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: #d9d9dc 10px 10px 10px 10px;
+    overflow: hidden;
 }
 .form-head {
     font: normal normal bold 24px/37px Roboto;
@@ -64,10 +69,21 @@ body {
     color: #42515f;
     text-transform: capitalize;
     opacity: 1;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+    background: #008cff;
 }
 .form-head h2 {
-    font-size: large;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 1em;
+    font-weight: 400;
+    color: white;
+}
+.form-block {
+    margin-bottom: 1em;
 }
 .row-content {
     display: flex;
@@ -82,10 +98,16 @@ body {
     display: block;
 }
 .text {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 400;
     color: #42515f;
     opacity: 1;
     font-family: Roboto;
+    display: contents;
+}
+.text-logo {
+    margin-left: 1%;
+    font-weight: 800;
 }
 .input {
     width: 100%;
@@ -110,6 +132,10 @@ body {
     margin: 12px;
 }
 .selectBox {
+    display: flex;
+    justify-content: space-between;
+}
+.selectBox select {
     padding: 0;
     border:  1px solid #ccc;
     border-radius: 4px;
@@ -119,13 +145,14 @@ body {
     color: #42515f;
     background-color: transparent;
     margin:0;
-    width: 32%;
+    width: 30%;
     height: 2em;
 }
+
 .button-style {
     color: #333639;
     background: rgb(229, 228, 228);
-    font-size: medium;
+    font: normal normal normal 20px/26px Roboto;
     margin: 10px;
     border-radius: 10px;
     padding: 8px 16px;
@@ -136,5 +163,8 @@ body {
     background-color: #0d0e0d;
     color: #ccc;
 }
-.address-select {
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
